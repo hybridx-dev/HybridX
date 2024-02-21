@@ -7,14 +7,14 @@
 ## Background
 HybridX introduces a groundbreaking approach to hybrid token standardization, addressing the limitations encountered in existing models. Inspired by the innovative concept of hybrid ERC20/ERC721 tokens introduced by Pandora (ERC404), HybridX aims to refine and enhance this idea, presenting a solution that balances efficiency, safety, and interoperability.
 
-## The Challenge with ERC404
+### The Challenge with ERC404
 While ERC404 made significant step in enabling NFTs to be traded with inherent liquidity, but it fell short in several areas:
 
 **High Gas Costs**: Transactions were often prohibitively expensive, limiting accessibility and scalability.
 
 **Incompatibility with Existing Standards**: Deviations from established token behaviors posed risks and integration challenges, impacting the broader ecosystem's security and functionality.
 
-## Introducing HX Tokens
+### Introducing HX Tokens
 HybridX proposes a novel standard, the HX Token, designed to seamlessly blend the versatility of ERC20 tokens with ERC721 NFTs, thereby overcoming the drawbacks of ERC404. Key features include:
 
 **Efficient Gas Usage**: Benchmarking demonstrates up to an 87% reduction in gas costs compared to ERC404.
@@ -23,7 +23,7 @@ HybridX proposes a novel standard, the HX Token, designed to seamlessly blend th
 
 **Composable and Flexible Design**: The dual-contract architecture, comprising IERC20HX and IERC721HX interfaces, facilitates on-demand NFT minting and burning, enabling a fluid transition between token types without sacrificing effectiveness.
 
-## Features
+### Features
 HybridX's implementation leverages OpenZeppelin Contracts Library for ERC20 functionalities, alongside with ERC721A/ERC721Psi for optimized NFT batch minting.
 
 **Seamless ERC20 Interactions**: Users can trade, swap, and transfer ERC20HX Tokens like standard ERC20.
