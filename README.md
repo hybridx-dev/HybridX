@@ -8,7 +8,7 @@
 HybridX introduces a groundbreaking approach to hybrid token standardization, addressing the limitations encountered in existing models. Inspired by the innovative concept of hybrid ERC20/ERC721 tokens introduced by Pandora (ERC404), HybridX aims to refine and enhance this idea, presenting a solution that balances efficiency, safety, and interoperability.
 
 ## The Challenge with ERC404
-While ERC404 made significant step in enabling NFTs to be traded with inherent liquidity, it fell short in several areas:
+While ERC404 made significant step in enabling NFTs to be traded with inherent liquidity, but it fell short in several areas:
 
 **High Gas Costs**: Transactions were often prohibitively expensive, limiting accessibility and scalability.
 
