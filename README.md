@@ -12,7 +12,7 @@ While ERC404 made significant step in enabling NFTs to be traded with inherent l
 
 **High Gas Costs**: Transactions were often prohibitively expensive, limiting accessibility and scalability.
 
-**Incompatibility With Existing Standards**: Deviations from established token behaviors posed risks and integration challenges, impacting the broader ecosystem's security and functionality.
+**Incompatibility with Existing Standards**: Deviations from established token behaviors posed risks and integration challenges, impacting the broader ecosystem's security and functionality.
 
 ## Introducing HX Tokens
 HybridX proposes a novel standard, the HX Token, designed to seamlessly blend the versatility of ERC20 tokens with ERC721 NFTs, thereby overcoming the drawbacks of ERC404. Key features include:
