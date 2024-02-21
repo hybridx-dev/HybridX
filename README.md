@@ -1,5 +1,5 @@
 # HybridX: ERC20/ERC721 Hybrid Token Standard for NFTs with Native Liquidity
-
+![logo](./assets/android-chrome-512x512.png)
 ## Background
 HybridX introduces a groundbreaking approach to hybrid token standardization, addressing the limitations encountered in existing models. Inspired by the innovative concept of hybrid ERC20/ERC721 tokens introduced by Pandora (ERC404), HybridX aims to refine and enhance this idea, presenting a solution that balances efficiency, safety, and interoperability.
 
