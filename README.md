@@ -19,10 +19,11 @@ HybridX proposes a novel standard, the HX Token, designed to seamlessly blend th
 
 **Composable and Flexible Design**: The dual-contract architecture, comprising IERC20HX and IERC721HX interfaces, facilitates on-demand NFT minting and burning, enabling a fluid transition between token types without sacrificing effectiveness.
 
-## Technical Innovations
+## Innovations
 HybridX's implementation leverages OpenZeppelin Contracts Library for ERC20 functionalities, alongside with ERC721A/ERC721Psi for optimized NFT batch minting.
 
 **Seamless ERC20 Interactions**: Users can trade, swap, and transfer ERC20HX Tokens like standard ERC20.
+
 **On-Demand NFT Minting and Burning**: Through the HybridX Tools (https://tools.hybridx.org), users can effortlessly convert their ERC20 tokens into unique ERC721 NFTs, and vice versa, maintaining liquidity and value continuity.
 
 ## Installation
