@@ -1,0 +1,18 @@
+{
+  "name": "hybridx",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^4.9.5",
+    "@remix-project/remixd": "^0.6.26",
+    "erc721a": "^4.2.3",
+    "erc721psi": "^0.7.0",
+    "hardhat": "^2.20.1",
+    "hardhat-gas-reporter": "^1.0.10"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "test": "hardhat test --network hardhat",
+    "benchmark": "REPORT_GAS=true BENCHMARKING=true hardhat test ./contracts/benchmark/*.benchmark.ts --network hardhat"
+  }
+}
