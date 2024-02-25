@@ -14,14 +14,14 @@ abstract contract ERC721PsiHX is IERC721HX, ERC721Psi, ERC721PsiBurnable, Access
     function mint(
         address target,
         uint256 quantity
-    ) external onlyRole(MINTER_ROLE) {
+    ) external virtual onlyRole(MINTER_ROLE) {
         _safeMint(target, quantity);
     }
 
     function burn(
         address origin,
         uint256[] calldata ids
-    ) external onlyRole(MINTER_ROLE) {
+    ) external virtual onlyRole(MINTER_ROLE) {
         uint256 pre = totalSupply();
         for (uint i = 0; i < ids.length; i++) {
             require(origin == ownerOf(ids[i]), "ERC721PsiHX: Not token owner");

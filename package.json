@@ -4,6 +4,7 @@
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
     "@openzeppelin/contracts": "^4.9.5",
     "@remix-project/remixd": "^0.6.26",
+    "dotenv": "^16.4.5",
     "erc721a": "^4.2.3",
     "erc721psi": "^0.7.0",
     "hardhat": "^2.20.1",
