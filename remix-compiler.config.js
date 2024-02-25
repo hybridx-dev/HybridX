@@ -5,5 +5,5 @@ module.exports = {
       enabled: false,
       runs: 200,
     },
-  }
+  },
 };
