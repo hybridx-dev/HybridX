@@ -30,6 +30,8 @@ HybridX's implementation leverages OpenZeppelin Contracts Library for ERC20 func
 
 **On-Demand NFT Minting and Burning**: Through the HybridX Tools (https://tools.hybridx.org), users can effortlessly convert their ERC20 tokens into unique ERC721 NFTs, and vice versa, maintaining liquidity and value continuity.
 
+**Convert Existing NFTs into HX NFTs (Experimental)**: HybridX introduces an experimental feature that allows the conversion of existing ERC721 NFTs into HX-compatible NFTs. This process aims to bring the benefits of native liquidity and efficiency to a broader range of NFT assets, transforming the utility and market dynamics of existing NFT collections.
+
 ## Installation
 ```sh
 git clone https://github.com/hybridx-dev/HybridX
