@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-import "../../hybridX/ERC721PsiHXLockMirror-experimental.sol";
+import "../../extensions/ERC721PsiHXLockMirror-experimental.sol";
 
 contract SimpleERC721PsiHXLockMirror is ERC721PsiHXLockMirror {
     constructor(

@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 import "@openzeppelin/contracts/interfaces/IERC721.sol";
 import "@openzeppelin/contracts/interfaces/IERC721Metadata.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
-import "./ERC721PsiHX.sol";
+import "../hybridX/ERC721PsiHX.sol";
 
 abstract contract ERC721PsiHXLockMirror is ERC721PsiHX, IERC721Receiver {
     address public srcNFT;

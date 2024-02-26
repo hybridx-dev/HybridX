@@ -17,11 +17,11 @@ interface IERC20HX is IERC20 {
     function mintNFTFrom(address from, address to, uint256 amountNFT) external;
 
     // Mint NFT for the sender by burning sender's ERC20 tokens
-    function mintNFT(uint256 amountNFT) external;
+    function mintNFT(uint256 amountNFT) payable external;
 
     // Burn NFTs from a specified address and credit ERC20 tokens to another address
     function burnNFTFrom(address from, address to, uint256[] calldata nftIds) external;
 
     // Burn sender's NFTs and credit ERC20 tokens to the sender
-    function burnNFT(uint256[] calldata nftIds) external;
+    function burnNFT(uint256[] calldata nftIds) payable external;
 }

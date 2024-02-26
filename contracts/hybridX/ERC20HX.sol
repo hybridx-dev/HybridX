@@ -35,7 +35,7 @@ abstract contract ERC20HX is IERC20HX, ERC20, ERC20Permit, Ownable {
         _mintNFTFrom(from, to, amountNFT);
     }
 
-    function mintNFT(uint256 amountNFT) public {
+    function mintNFT(uint256 amountNFT) payable public virtual {
         address spender = _msgSender();
         _mintNFTFrom(spender, spender, amountNFT);
     }
@@ -66,7 +66,7 @@ abstract contract ERC20HX is IERC20HX, ERC20, ERC20Permit, Ownable {
         _burnNFTFrom(owner, to, nftIds);
     }
 
-    function burnNFT(uint256[] calldata nftIds) public {
+    function burnNFT(uint256[] calldata nftIds) payable public virtual {
         address owner = _msgSender();
         _burnNFTFrom(owner, owner, nftIds);
     }

@@ -1,35 +1,35 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-import "./ERC20HX.sol";
+import "../hybridX/ERC20HX.sol";
 
-abstract contract ERC20HXBurnFee is ERC20HX {
-    struct BurnFeeInfo {
+abstract contract ERC20HXBurnTaxable is ERC20HX {
+    struct BurnTaxInfo {
         address receiver;
         uint96 fraction;
     }
 
-    BurnFeeInfo private _burnFeeInfo;
+    BurnTaxInfo private _burnTaxInfo;
 
     function _feeDenominator() internal pure virtual returns (uint96) {
         return 10000;
     }
 
-    function _setBurnFee(address receiver, uint96 feeNumerator) internal virtual {
-        require(feeNumerator <= _feeDenominator(), "ERC20HXBurnFee: Exceeds amounts");
-        require(receiver != address(0), "ERC20HXBurnFee: Invalid parameters");
+    function _setBurnTax(address receiver, uint96 feeNumerator) internal virtual {
+        require(feeNumerator <= _feeDenominator(), "ERC20HXBurnTax: Exceeds amounts");
+        require(receiver != address(0), "ERC20HXBurnTax: Invalid parameters");
 
-        _burnFeeInfo = BurnFeeInfo(receiver, feeNumerator);
+        _burnTaxInfo = BurnTaxInfo(receiver, feeNumerator);
     }
 
-    function setBurnFee(address receiver, uint96 feeNumerator) public virtual onlyOwner() {
-        _setBurnFee(receiver, feeNumerator);
+    function setBurnTax(address receiver, uint96 feeNumerator) public virtual onlyOwner() {
+        _setBurnTax(receiver, feeNumerator);
     }
 
     function burnFee(uint256 amount) public view virtual returns (address, uint256) {
-        uint256 burnFeeAmount = (amount * _burnFeeInfo.fraction) / _feeDenominator();
+        uint256 burnFeeAmount = (amount * _burnTaxInfo.fraction) / _feeDenominator();
 
-        return (_burnFeeInfo.receiver, burnFeeAmount);
+        return (_burnTaxInfo.receiver, burnFeeAmount);
     }
 
     function _burnNFTFrom(
