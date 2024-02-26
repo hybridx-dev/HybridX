@@ -15,11 +15,15 @@ abstract contract ERC20HXBurnFee is ERC20HX {
         return 10000;
     }
 
-    function _setBurnFee( address receiver, uint96 feeNumerator) internal virtual {
+    function _setBurnFee(address receiver, uint96 feeNumerator) internal virtual {
         require(feeNumerator <= _feeDenominator(), "ERC20HXBurnFee: Exceeds amounts");
         require(receiver != address(0), "ERC20HXBurnFee: Invalid parameters");
 
         _burnFeeInfo = BurnFeeInfo(receiver, feeNumerator);
+    }
+
+    function setBurnFee(address receiver, uint96 feeNumerator) public virtual onlyOwner() {
+        _setBurnFee(receiver, feeNumerator);
     }
 
     function burnFee(uint256 amount) public view virtual returns (address, uint256) {
