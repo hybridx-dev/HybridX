@@ -44,7 +44,7 @@ abstract contract ERC20HX is IERC20HX, ERC20, ERC20Permit, Ownable {
         address spender,
         address to,
         uint256 amountNFT
-    ) internal {
+    ) virtual internal {
         uint256 amountFT = amountNFT * 10 ** decimals();
 
         ERC20._burn(spender, amountFT);
@@ -75,7 +75,7 @@ abstract contract ERC20HX is IERC20HX, ERC20, ERC20Permit, Ownable {
         address owner,
         address to,
         uint256[] calldata nftIds
-    ) internal {
+    ) virtual internal {
         uint256 amountFT = (nftIds.length) * 10 ** decimals();
 
         nftContract.burn(owner, nftIds);
